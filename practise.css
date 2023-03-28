@@ -1,0 +1,454 @@
+/* Banner Section */
+.banner-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/slider.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.banner-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(76, 117, 175, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+
+}
+
+h1 {
+    /* font-weight: bold; */
+    font-family: "Myriad pro";
+}
+
+/* .................................... */
+
+.btn {
+    background-color: #edc315;
+}
+
+/* Navabr */
+.navbar {
+    padding: 0.5rem 1.5rem;
+    background-color: rgb(80, 123, 184, 0.5);
+}
+
+.navbar ul {
+    margin-top: 1rem;
+}
+
+.navbar ul li a,
+i {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0 1.3rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+
+}
+
+.navbar-toggler {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 0;
+    border: none;
+    box-shadow: 1px 1px 5px blue;
+}
+
+.navbar-toggler:focus {
+    box-shadow: 1px 1px 5px red;
+}
+
+.nav-logo {
+    max-width: 70px;
+}
+
+/* ------------------------------------ */
+/* Service Container */
+.service-container {
+    width: 100%;
+    background: #739ee3;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.service-text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.service-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: #fff;
+}
+
+.card h3 {
+    margin-top: 2rem;
+}
+
+.card-img {
+    width: 17rem;
+    height: 17rem;
+    border-radius: 50%;
+}
+
+@media only screen and (max-width:900px) {
+    .service-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .service-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ..................................... */
+
+/* About Section */
+
+.about-img {
+    background-image: url(images/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.about-container {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 1rem;
+    position: relative;
+    background-color: rgb(225, 186, 20, 0.8);
+}
+
+
+.about-text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.about-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.about-circle {
+
+    width: 17rem;
+    height: 17rem;
+    margin: 2rem auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #ffF;
+    color: #fff;
+}
+
+@media only screen and (max-width:900px) {
+    .about-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .about-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* ............................ */
+
+/* Service 2 Section */
+.service-2 {
+    width: 100%;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5380c1;
+}
+
+.service-2-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-2-img {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.service-2-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 1rem;
+    color: #fff;
+}
+
+.service-2 .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.service-2_1 {
+    width: 100%;
+    padding: 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #739ee3;
+}
+
+.service-2_1 .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width:830px) {
+    .service-2-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .service-2-img {
+        width: 17rem;
+        height: 17rem;
+        border-radius: 50%;
+    }
+}
+
+/* /////////////////////// */
+
+/* Pricing Section */
+.pricing-container {
+    width: 100%;
+    background: #5380c1;
+    padding: 5rem 1rem;
+    position: relative;
+}
+
+.pricing-text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.pricing-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    color: #5380c1;
+}
+
+.pricing-img {
+    margin: 1rem auto;
+    width: 70px;
+    height: 70px;
+}
+
+.pricing-btn {
+    color: #fff;
+    border-radius: 20px;
+    background-color: #edc315;
+}
+
+@media only screen and (max-width:900px) {
+    .pricing-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing-card {
+        padding: 0.5rem 2rem;
+    }
+
+    .pricing-img {
+        margin: 1rem auto;
+    }
+
+
+}
+
+@media only screen and (max-width:650px) {
+    .pricing-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing-card {
+        padding: 0.5rem 2rem;
+    }
+
+    .pricing-img {
+        margin: 1rem auto;
+    }
+
+
+}
+
+/* ............................. */
+
+/* Detail Section */
+.detail-section {
+    width: 100%;
+    height: auto;
+    padding: 5rem 1rem;
+    background-color: #739ee3;
+}
+
+.detail-text {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.detail-card {
+    margin: 2rem;
+    background-color: #fff;
+    display: flex;
+    padding: 1rem;
+    background: transparent;
+}
+
+.dcard-img {
+    max-width: 70px;
+    max-height: 50px;
+    margin-top: 43px;
+    margin-right: 25px;
+}
+
+.card-text {
+    padding: 1rem 0rem;
+    color: #fff;
+}
+
+@media only screen and (max-width:900px) {
+    .card-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .detail-card {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .dcard-img {
+        max-width: 100px;
+    }
+}
+
+
+
+/* .................................. */
+
+.dr-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/footer.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.dr-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(225, 186, 20, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.dr-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+}
+
+/* ............................. */
+/* Footer */
+.footer {
+    background-color: #343434;
+    color: #fff;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.icons a{
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+/* ............................ */
